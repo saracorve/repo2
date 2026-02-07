@@ -1,0 +1,13 @@
+nombre = input("¿Cual es tu nombre? : ")
+fecha = input("Por favor coloca la fecha y momento del día (día, tarde, noche):  ")
+print("Hola, bienvenido a  AAA ", nombre, ". Hoy es: ", fecha)
+dolares = input("Cuantos dolares vas a cambiar: ")
+euros = round(float(dolares) * 0.85, 2) 
+moneda10 = euros // 10
+moneda1 = int(euros % 10)
+saldo =round(euros - (moneda10 * 10) - moneda1, 2) 
+print("Vas a recibir:", euros, "euros")
+print("billetes de 10:", moneda10)
+print("billetes de 1:", moneda1)
+print("saldo:", saldo)
+print("Gracias", nombre, "por confiar en AAA, tu mejor sitio de cambio")
