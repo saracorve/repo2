@@ -1,0 +1,21 @@
+frase = input("Colocar frase de al menos 10 palabras: ")
+p1 = len(frase) 
+print(p1)
+p2 = int(p1) - frase.count(" ")
+print(p2)
+a = int(frase.count("a"))
+e = int(frase.count("e"))
+i = int(frase.count("i"))
+o = int(frase.count("o"))
+u = int(frase.count("u"))
+p3 = a + e + i + o + u
+print(p3)
+p4 = int(frase.count(" "))+ 1
+print (p4)
+p5_1 = frase.find(" ")
+p5 = frase[p5_1 + 1: ]
+print(p5)
+p6 = frase.replace(" ", "-")
+print(p6)
+p7 = frase.swapcase()
+print(p7)
